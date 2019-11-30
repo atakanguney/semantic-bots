@@ -1,0 +1,22 @@
+{
+
+    "manifest_version": 2,
+    "name": "Temiz Ekşi",
+    "version": "1.0",
+  
+    "description": "Saldırgan entryleri tespit eder, isterseniz kaldırır.",
+  
+    "icons": {
+      "48": "icons/wash_hands_98641_640_BsV_icon.ico"
+    },
+  
+    "content_scripts": [
+      {
+        "matches": ["*://*.eksisozluk.com/*"],
+        "js": ["assets/jquery-3.4.1.min.js", "content-script.js"]
+      }
+    ],
+    "permissions": [
+      "<all_urls>" 
+    ]
+}  
